@@ -169,6 +169,8 @@ export class RecordingSetupPrompt implements Prompt {
 							key.style.background = ColorConfig.tonic;
 						} else if (scalePitch == Math.round(this._doc.song.edo*Math.log2(3/2)) && this._doc.prefs.showFifth) {
 							key.style.background = ColorConfig.fifthNote;
+						} else if (scalePitch == Math.round(this._doc.song.edo*Math.log2(5/4)) && this._doc.prefs.showThird) {
+							key.style.background = ColorConfig.thirdNote;
 						} else {
 							key.style.background = ColorConfig.pitchBackground;
 						}
